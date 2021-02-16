@@ -20,6 +20,7 @@ public class SeriesDetalles extends AppCompatActivity {
         TextView reparto = (TextView) findViewById(R.id.txtRepartoSeries);
         TextView sinopsis = (TextView) findViewById(R.id.txtSinopsisSeries);
         TextView temporada= (TextView) findViewById(R.id.txtTemporadaSeries);
+        ImageView puntuacion= (ImageView) findViewById(R.id.imgEstrellaSerie);
 
         Intent intent = getIntent();
 
@@ -31,6 +32,7 @@ public class SeriesDetalles extends AppCompatActivity {
             reparto.setText(bundle.getString("txtRepartoSeries"));
             sinopsis.setText(bundle.getString("txtSinopsisSeries"));
             temporada.setText(bundle.getString("txtTemporadaSeries"));
+            puntuacion.setImageResource(bundle.getInt("imgEstrellaSerie"));
 
         }
 

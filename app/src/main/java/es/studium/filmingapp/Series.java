@@ -9,9 +9,10 @@ public class Series {
     private final String reparto;
     private final String sinopsi;
     private final String temporada;
+    private final int calificacion;
 
 
-    public Series(int imagen, String nombre, String director, String reparto, String sinopsi, String temporada) {
+    public Series(int imagen, String nombre, String director, String reparto, String sinopsi, String temporada, int calificacion) {
         this.imagen = imagen;
         this.nombre = nombre;
         //poner sinopsis, autor, etc....
@@ -19,6 +20,7 @@ public class Series {
         this.reparto = reparto;
         this.sinopsi = sinopsi;
         this.temporada = temporada;
+        this.calificacion = calificacion;
     }
 
     public String getNombre()
@@ -39,6 +41,7 @@ public class Series {
     }
     public String getSinopsi() { return sinopsi; }
     public String getTemporada() { return temporada; }
+    public int getCalificacion() { return calificacion; }
 
 
 }

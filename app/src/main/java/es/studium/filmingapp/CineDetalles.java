@@ -14,11 +14,12 @@ public class CineDetalles extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cine_detalles);
 
-        ImageView imgPeli = (ImageView) findViewById(R.id.imgSerieDetalle);
+        ImageView imgPeli = (ImageView) findViewById(R.id.imgPeliculaDetalle);
         TextView tituloPeli = (TextView) findViewById(R.id.txtTituloSerie);
-        TextView director = (TextView) findViewById(R.id.txtDirectorSeries);
-        TextView reparto = (TextView) findViewById(R.id.txtRepartoSeries);
-        TextView sinopsis = (TextView) findViewById(R.id.txtSinopsisSeries);
+        TextView director = (TextView) findViewById(R.id.txtDirectorPelicula);
+        TextView reparto = (TextView) findViewById(R.id.txtRepartoPelicula);
+        TextView sinopsis = (TextView) findViewById(R.id.txtSinopsisPelicula);
+        ImageView puntuacion= (ImageView) findViewById(R.id.imgEstrellaCine);
 
         Intent intent = getIntent();
 
@@ -29,6 +30,7 @@ public class CineDetalles extends AppCompatActivity {
             director.setText(bundle.getString("txtDirectorPelicula"));
             reparto.setText(bundle.getString("txtRepartoPelicula"));
             sinopsis.setText(bundle.getString("txtSinopsisPelicula"));
+            puntuacion.setImageResource(bundle.getInt("imgEstrellaCine"));
 
         }
 
